@@ -15,8 +15,7 @@ int main() {
   cin >> x;
   
   int mySpot=0;
-
-  for(;V[mySpot] < x; mySpot++) ;
+  for(;V[mySpot] < x && mySpot < n; mySpot++) ;
 
   for(int i=n; i>mySpot; i--)  
     V[i] = V[i-1];
